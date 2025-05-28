@@ -1,0 +1,102 @@
+/* Variáveis de cor */
+:root {
+    --verde-campo: #2e8b57;
+    --laranja-cidade: #ff8c00;
+    --cinza-fundo: #f4f4f4;
+    --cor-texto: #333;
+}
+
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cinza-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+}
+
+header.cabecalho {
+    background-color: var(--verde-campo);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.secao {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: var(--laranja-cidade);
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 5px;
+    border-radius: 8px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--laranja-cidade);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e67300;
+}
+
+footer.rodape {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
